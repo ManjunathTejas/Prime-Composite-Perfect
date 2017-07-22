@@ -2,7 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "bv.h"
-
+/**
+ * @bvp - pointer to where the vector starts
+ * List all the prime factors of a number
+ **/
 void list_prime_factors(bitV *bvp){
 	uint32_t tmp_size = bvp->length;
 	printf("%d :", bvp->length);
@@ -21,7 +24,10 @@ void list_prime_factors(bitV *bvp){
 		}
 	}
 }
-
+/**
+ * @bvp - pointer to where the vector starts
+ * Checks if all the factors sum up to the number itself
+ **/
 void is_perfect(bitV *bvp){
 	int perf_arr[bvp->length];
 	int perf_sum = 0;
